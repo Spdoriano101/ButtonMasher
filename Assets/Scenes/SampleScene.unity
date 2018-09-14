@@ -607,6 +607,7 @@ MonoBehaviour:
   gameLength: 10
   gameOverSound: {fileID: 282455983}
   messageText: {fileID: 357672355}
+  StartMusic: {fileID: 1333788602}
 --- !u!212 &728814674
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -888,8 +889,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6eb0a5218ab1af54dbc7f4ed6bac0a35, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: cc3693743cac8ac45ab4d457efd019bc, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
