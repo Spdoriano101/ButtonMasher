@@ -65,18 +65,19 @@ public class ButtonMasher : MonoBehaviour {
         Debug.Log("OnMouseDown method called");
 
         //Check if the game is still running
-        if(gameRunning == true)
+        if (gameRunning == true)
         {
 
             //Trigger our clicking sound to play
             clickSound.Play();
             // Increase the score by one
             score = score + 1;
+
             // Update visual score -- changes int score to a string one
             scoreTExt.text = score.ToString();
 
         } // End of if (gameRunning == true)
-     
+
         else
         {
             // game is not running and we click the button
@@ -86,8 +87,15 @@ public class ButtonMasher : MonoBehaviour {
             timeRemaining = gameLength;
 
             messageText.text = "Mash the button!";
-        }
 
-    } // End of OnMouseDown()
+
+            // Resets score
+            score = 0;
+
+            // Update visual score -- changes int score to a string one
+            scoreTExt.text = score.ToString();
+
+        }
+    }// End of OnMouseDown()
 
 } // End of button masher class
